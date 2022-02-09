@@ -1,0 +1,46 @@
+Go to the website http://stanford.edu/~cpiech/karel/ide.html
+Choose the world - 5x5;
+
+function oddBeeper(){
+   repeat(3){
+      putBeeper();
+      if(frontIsBlocked()){
+         oddUp();
+      } else {
+         move();
+         move();
+      }
+   }
+}
+
+function oddUp(){
+   turnLeft();
+   move();
+   turnLeft();
+}
+
+function evenUp(){
+   turnRight();
+   move();
+   turnRight();
+}
+
+function evenBeeper(){
+   repeat(3){
+      if(frontIsBlocked()){
+         evenUp();
+      } else {
+         move();
+         putBeeper();
+         move();
+      }
+   }
+}
+
+function main(){
+   oddBeeper();
+   evenBeeper();
+   oddBeeper();
+   evenBeeper();
+   oddBeeper();
+}

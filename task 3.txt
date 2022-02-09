@@ -1,0 +1,48 @@
+1. Go to the website http://stanford.edu/~cpiech/karel/ide.html
+2. Choose the world - maze;
+
+function main(){
+   turnLeft();
+   repeat(4){
+      move();
+   }
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   turnRight();
+   repeat(2){
+      move();
+   }
+   repeat(2){
+      turnRight();
+      move();
+   }
+   turnLeft();
+   move();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   turnLeft();
+   move();
+   move();
+   repeat(2){
+      turnRight();
+      move();
+      turnLeft();
+      move();
+   }
+   turnLeft();
+   move();
+   move();
+   turnLeft();
+   move();
+   turnRight();
+   move();
+   move();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+}
